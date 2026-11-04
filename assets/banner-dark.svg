@@ -9,7 +9,6 @@
       <stop offset="100%" stop-color="#E9C18F" stop-opacity="0"/>
     </radialGradient>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;600;700&amp;display=swap');
       .title { font-family: 'IBM Plex Sans', -apple-system, sans-serif; font-weight: 700; fill: #ECF3F0; letter-spacing: -0.5px; }
       .mono { font-family: 'IBM Plex Mono', ui-monospace, monospace; }
     </style>
@@ -37,31 +36,31 @@
   <!-- Stars & Constellation -->
   <g>
     <circle cx="660" cy="60" r="1.2" fill="#ECF3F0" opacity="0.6"/><circle cx="720" cy="40" r="0.8" fill="#ECF3F0" opacity="0.4"/><circle cx="820" cy="30" r="1.5" fill="#ECF3F0" opacity="0.7"/><circle cx="910" cy="35" r="0.9" fill="#ECF3F0" opacity="0.5"/><circle cx="1010" cy="45" r="1.1" fill="#ECF3F0" opacity="0.6"/><circle cx="1070" cy="90" r="0.7" fill="#ECF3F0" opacity="0.4"/><circle cx="1090" cy="190" r="1.4" fill="#ECF3F0" opacity="0.7"/><circle cx="1060" cy="260" r="0.8" fill="#ECF3F0" opacity="0.5"/><circle cx="1010" cy="330" r="1.3" fill="#ECF3F0" opacity="0.7"/><circle cx="890" cy="350" r="0.9" fill="#ECF3F0" opacity="0.4"/><circle cx="760" cy="340" r="1.2" fill="#ECF3F0" opacity="0.6"/><circle cx="680" cy="310" r="0.8" fill="#ECF3F0" opacity="0.4"/><circle cx="650" cy="240" r="1.5" fill="#ECF3F0" opacity="0.7"/><circle cx="700" cy="130" r="0.7" fill="#ECF3F0" opacity="0.3"/><circle cx="850" cy="110" r="1.1" fill="#ECF3F0" opacity="0.5"/><circle cx="930" cy="140" r="0.8" fill="#ECF3F0" opacity="0.4"/><circle cx="900" cy="250" r="1.3" fill="#ECF3F0" opacity="0.6"/><circle cx="820" cy="230" r="0.9" fill="#ECF3F0" opacity="0.5"/><circle cx="780" cy="170" r="0.7" fill="#ECF3F0" opacity="0.3"/>
-    <line x1="760" y1="95" x2="960" y2="75" stroke="#82D0DC" stroke-width="1.2" stroke-opacity="0.55"/><line x1="960" y1="75" x2="1020" y2="175" stroke="#82D0DC" stroke-width="1.2" stroke-opacity="0.55" stroke-dasharray="3,4"/><line x1="1020" y1="175" x2="960" y2="295" stroke="#82D0DC" stroke-width="1.2" stroke-opacity="0.55"/><line x1="960" y1="295" x2="790" y2="285" stroke="#82D0DC" stroke-width="1.2" stroke-opacity="0.55"/><line x1="790" y1="285" x2="710" y2="185" stroke="#82D0DC" stroke-width="1.2" stroke-opacity="0.55" stroke-dasharray="4,4"/><line x1="710" y1="185" x2="760" y2="95" stroke="#82D0DC" stroke-width="1.2" stroke-opacity="0.55"/><line x1="870" y1="190" x2="960" y2="295" stroke="#82D0DC" stroke-width="1.2" stroke-opacity="0.55"/><line x1="870" y1="190" x2="760" y2="95" stroke="#82D0DC" stroke-width="1.2" stroke-opacity="0.55" stroke-dasharray="2,4"/><line x1="870" y1="190" x2="1020" y2="175" stroke="#82D0DC" stroke-width="1.2" stroke-opacity="0.55" stroke-dasharray="3,4"/><line x1="870" y1="190" x2="790" y2="285" stroke="#82D0DC" stroke-width="1.2" stroke-opacity="0.55"/>
+    <line x1="870" y1="190" x2="760" y2="95" stroke="#82D0DC" stroke-width="1.2" stroke-opacity="0.55"/><line x1="870" y1="190" x2="960" y2="295" stroke="#82D0DC" stroke-width="1.2" stroke-opacity="0.55"/><line x1="870" y1="190" x2="710" y2="185" stroke="#82D0DC" stroke-width="1.2" stroke-opacity="0.55"/><line x1="790" y1="285" x2="870" y2="190" stroke="#82D0DC" stroke-width="1.2" stroke-opacity="0.55" stroke-dasharray="7,6"/><line x1="760" y1="95" x2="960" y2="295" stroke="#82D0DC" stroke-width="1.2" stroke-opacity="0.55" stroke-dasharray="3,6"/><line x1="760" y1="95" x2="960" y2="75" stroke="#82D0DC" stroke-width="1.2" stroke-opacity="0.55" stroke-dasharray="3,6"/><line x1="1020" y1="175" x2="960" y2="75" stroke="#82D0DC" stroke-width="1.2" stroke-opacity="0.55" stroke-dasharray="1,5"/><line x1="1020" y1="175" x2="960" y2="295" stroke="#82D0DC" stroke-width="1.2" stroke-opacity="0.55" stroke-dasharray="1,5"/>
     
                 <circle cx="760" cy="95" r="11" fill="none" stroke="#82D0DC" stroke-width="1" stroke-opacity="0.3" />
                 <circle cx="760" cy="95" r="4.5" fill="#ECF3F0" />
-                <text x="748" y="98.5" fill="#B9CFD6" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" font-weight="500" letter-spacing="1.2" text-anchor="end">MATHEMATICS</text>
+                <text x="748" y="98.5" fill="#B9CFD6" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" font-weight="500" letter-spacing="1.2" text-anchor="end">SURROGATE MODELS</text>
             
                 <circle cx="960" cy="75" r="11" fill="none" stroke="#82D0DC" stroke-width="1" stroke-opacity="0.3" />
                 <circle cx="960" cy="75" r="4.5" fill="#ECF3F0" />
-                <text x="972" y="78.5" fill="#B9CFD6" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" font-weight="500" letter-spacing="1.2" text-anchor="start">OPTIMIZATION</text>
+                <text x="972" y="78.5" fill="#B9CFD6" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" font-weight="500" letter-spacing="1.2" text-anchor="start">BAYESIAN OPT.</text>
             
                 <circle cx="1020" cy="175" r="11" fill="none" stroke="#82D0DC" stroke-width="1" stroke-opacity="0.3" />
                 <circle cx="1020" cy="175" r="4.5" fill="#ECF3F0" />
-                <text x="1032" y="178.5" fill="#B9CFD6" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" font-weight="500" letter-spacing="1.2" text-anchor="start">XAI</text>
+                <text x="1032" y="178.5" fill="#B9CFD6" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" font-weight="500" letter-spacing="1.2" text-anchor="start">AL ≠ BO</text>
             
                 <circle cx="960" cy="295" r="11" fill="none" stroke="#82D0DC" stroke-width="1" stroke-opacity="0.3" />
                 <circle cx="960" cy="295" r="4.5" fill="#ECF3F0" />
-                <text x="972" y="298.5" fill="#B9CFD6" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" font-weight="500" letter-spacing="1.2" text-anchor="start">ACTIVE LEARNING</text>
+                <text x="972" y="298.5" fill="#B9CFD6" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" font-weight="500" letter-spacing="1.2" text-anchor="start">QUERY STRATEGIES</text>
             
                 <circle cx="790" cy="285" r="11" fill="none" stroke="#82D0DC" stroke-width="1" stroke-opacity="0.3" />
                 <circle cx="790" cy="285" r="4.5" fill="#ECF3F0" />
-                <text x="778" y="288.5" fill="#B9CFD6" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" font-weight="500" letter-spacing="1.2" text-anchor="end">MODELS</text>
+                <text x="778" y="288.5" fill="#B9CFD6" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" font-weight="500" letter-spacing="1.2" text-anchor="end">MATERIALS</text>
             
                 <circle cx="710" cy="185" r="11" fill="none" stroke="#82D0DC" stroke-width="1" stroke-opacity="0.3" />
                 <circle cx="710" cy="185" r="4.5" fill="#ECF3F0" />
-                <text x="698" y="188.5" fill="#B9CFD6" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" font-weight="500" letter-spacing="1.2" text-anchor="end">FIELD NOTES</text>
+                <text x="698" y="188.5" fill="#B9CFD6" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" font-weight="500" letter-spacing="1.2" text-anchor="end">EVALUATION</text>
             
                 <circle cx="870" cy="190" r="40" fill="url(#core-glow)" />
                 <circle cx="870" cy="190" r="18" fill="none" stroke="#E9C18F" stroke-width="1.2" stroke-opacity="0.7" />
@@ -73,7 +72,7 @@
   <!-- Left: Editorial Observatory Headers -->
   <g transform="translate(64, 0)">
     <!-- Top Meta Tag -->
-    <text x="0" y="68" class="mono" font-size="11" font-weight="600" letter-spacing="2.8" fill="#6F8EA0">O / Q DEEP FIELD OBSERVATORY · SIGNAL ATLAS / B1</text>
+    <text x="0" y="68" class="mono" font-size="11" font-weight="600" letter-spacing="2.8" fill="#6F8EA0">O / Q · OBSERVATORY OF QUESTIONS</text>
     
     <!-- Main Title -->
     <text x="0" y="128" class="title" font-size="34">THE OBSERVATORY</text>
@@ -83,8 +82,8 @@
     <line x1="0" y1="188" x2="180" y2="188" stroke="#E9C18F" stroke-width="2"/>
 
     <!-- Subtitle & Worldview -->
-    <text x="0" y="218" class="mono" font-size="11.5" font-weight="500" letter-spacing="1.5" fill="#B9CFD6">A DEEP-SPACE PERSONAL RESEARCH ATLAS</text>
-    <text x="0" y="244" class="mono" font-size="10.5" font-weight="500" letter-spacing="1.8" fill="#82D0DC">QUESTIONS / METHODS / EVIDENCE / FIELD NOTES</text>
+    <text x="0" y="218" class="mono" font-size="11.5" font-weight="500" letter-spacing="1.5" fill="#B9CFD6">ACTIVE LEARNING FOR MATERIALS SCIENCE</text>
+    <text x="0" y="244" class="mono" font-size="10.5" font-weight="500" letter-spacing="1.8" fill="#82D0DC">REPRODUCE FIRST · THEN BUILD A LOOP THAT TRANSFERS</text>
 
     <!-- Researcher Credentials Badge Box -->
     <g transform="translate(0, 276)">

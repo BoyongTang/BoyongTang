@@ -1,4 +1,6 @@
-import math
+import os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
 
 def generate_svg(theme="dark"):
     is_dark = theme == "dark"
@@ -15,29 +17,27 @@ def generate_svg(theme="dark"):
     
     cx, cy = 870, 190
     
-    # Nodes in constellation: (x, y, label, type)
+    # Real topics only (mirrors src/data/atlas.ts on the site): (x, y, label, type)
     nodes = [
-        (760, 95, "MATHEMATICS", "q"),
-        (960, 75, "OPTIMIZATION", "m"),
-        (1020, 175, "XAI", "m"),
-        (960, 295, "ACTIVE LEARNING", "r"),
-        (790, 285, "MODELS", "m"),
-        (710, 185, "FIELD NOTES", "n"),
-        (cx, cy, "DISCOVERY / TARGET", "core")
+        (760, 95, "SURROGATE MODELS", "m"),
+        (960, 75, "BAYESIAN OPT.", "m"),
+        (1020, 175, "AL ≠ BO", "n"),
+        (960, 295, "QUERY STRATEGIES", "m"),
+        (790, 285, "MATERIALS", "q"),
+        (710, 185, "EVALUATION", "m"),
+        (cx, cy, "ACTIVE LEARNING", "core")
     ]
     
     # Edges (i, j, dash)
     edges = [
-        (0, 1, ""),
-        (1, 2, "3,4"),
-        (2, 3, ""),
-        (3, 4, ""),
-        (4, 5, "4,4"),
-        (5, 0, ""),
+        (6, 0, ""),
         (6, 3, ""),
-        (6, 0, "2,4"),
-        (6, 2, "3,4"),
-        (6, 4, ""),
+        (6, 5, ""),
+        (4, 6, "7,6"),
+        (0, 3, "3,6"),
+        (0, 1, "3,6"),
+        (2, 1, "1,5"),
+        (2, 3, "1,5"),
     ]
     
     stars = [
@@ -96,7 +96,6 @@ def generate_svg(theme="dark"):
       <stop offset="100%" stop-color="{gold}" stop-opacity="0"/>
     </radialGradient>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;600;700&amp;display=swap');
       .title {{ font-family: 'IBM Plex Sans', -apple-system, sans-serif; font-weight: 700; fill: {text_starlight}; letter-spacing: -0.5px; }}
       .mono {{ font-family: 'IBM Plex Mono', ui-monospace, monospace; }}
     </style>
@@ -131,7 +130,7 @@ def generate_svg(theme="dark"):
   <!-- Left: Editorial Observatory Headers -->
   <g transform="translate(64, 0)">
     <!-- Top Meta Tag -->
-    <text x="0" y="68" class="mono" font-size="11" font-weight="600" letter-spacing="2.8" fill="{text_dim}">O / Q DEEP FIELD OBSERVATORY · SIGNAL ATLAS / B1</text>
+    <text x="0" y="68" class="mono" font-size="11" font-weight="600" letter-spacing="2.8" fill="{text_dim}">O / Q · OBSERVATORY OF QUESTIONS</text>
     
     <!-- Main Title -->
     <text x="0" y="128" class="title" font-size="34">THE OBSERVATORY</text>
@@ -141,8 +140,8 @@ def generate_svg(theme="dark"):
     <line x1="0" y1="188" x2="180" y2="188" stroke="{gold}" stroke-width="2"/>
 
     <!-- Subtitle & Worldview -->
-    <text x="0" y="218" class="mono" font-size="11.5" font-weight="500" letter-spacing="1.5" fill="{text_muted}">A DEEP-SPACE PERSONAL RESEARCH ATLAS</text>
-    <text x="0" y="244" class="mono" font-size="10.5" font-weight="500" letter-spacing="1.8" fill="{cyan}">QUESTIONS / METHODS / EVIDENCE / FIELD NOTES</text>
+    <text x="0" y="218" class="mono" font-size="11.5" font-weight="500" letter-spacing="1.5" fill="{text_muted}">ACTIVE LEARNING FOR MATERIALS SCIENCE</text>
+    <text x="0" y="244" class="mono" font-size="10.5" font-weight="500" letter-spacing="1.8" fill="{cyan}">REPRODUCE FIRST · THEN BUILD A LOOP THAT TRANSFERS</text>
 
     <!-- Researcher Credentials Badge Box -->
     <g transform="translate(0, 276)">
@@ -160,10 +159,8 @@ def generate_svg(theme="dark"):
 </svg>
 '''
 
-with open("/Users/kelvin.tang/Desktop/MY——CODE/git-chat/BoyongTang/assets/banner-dark.svg", "w") as f:
-    f.write(generate_svg("dark"))
-
-with open("/Users/kelvin.tang/Desktop/MY——CODE/git-chat/BoyongTang/assets/banner-light.svg", "w") as f:
-    f.write(generate_svg("light"))
+for theme in ("dark", "light"):
+    with open(os.path.join(HERE, "assets", f"banner-{theme}.svg"), "w") as f:
+        f.write(generate_svg(theme))
 
 print("Banners generated successfully.")
