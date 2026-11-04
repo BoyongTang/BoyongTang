@@ -21,11 +21,9 @@ def generate_svg(theme="dark"):
     
     # One unnamed galaxy per field (mirrors src/data/galaxies.ts on the site): (x, y, r, rotation°, tilt, arms, form, tint)
     galaxies = [
-        (720, 110, 62, -24, 0.62, 2, "spiral", cyan),
-        (880, 200, 82, 18, 0.78, 3, "spiral", gold),
-        (1060, 95, 52, 32, 0.55, 0, "elliptical", text_starlight),
-        (735, 295, 50, 12, 0.5, 0, "ring", green),
-        (1050, 290, 58, 140, 0.45, 2, "spiral", cyan),
+        (760, 120, 80, -24, 0.6, 2, "spiral", cyan),
+        (960, 215, 100, 18, 0.76, 3, "spiral", gold),
+        (780, 300, 62, 150, 0.46, 2, "spiral", green),
     ]
     stars = [
         (660, 60, 1.2, 0.6), (720, 40, 0.8, 0.4), (820, 30, 1.5, 0.7), (910, 35, 0.9, 0.5),

@@ -28,7 +28,7 @@ that can move to new material systems.
 
 The homepage maps each field as one galaxy; enter a galaxy to see what has come out of it.
 
-Applied Mathematics · Machine Learning · Materials Science · Trustworthy Evaluation · Teaching
+Mathematics · AI · Teaching
 
 No public results yet — papers, projects and notes will be listed here as they are published.
 
