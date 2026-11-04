@@ -1,4 +1,6 @@
+import math
 import os
+import random
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
@@ -15,31 +17,16 @@ def generate_svg(theme="dark"):
     green = "#8FC3B4" if is_dark else "#37685E"
     nebula_color = "#163044" if is_dark else "#E9E6DC"
     
-    cx, cy = 870, 190
+    cx, cy = 890, 195
     
-    # Real topics only (mirrors src/data/atlas.ts on the site): (x, y, label, type)
-    nodes = [
-        (760, 95, "SURROGATE MODELS", "m"),
-        (960, 75, "BAYESIAN OPT.", "m"),
-        (1020, 175, "AL ≠ BO", "n"),
-        (960, 295, "QUERY STRATEGIES", "m"),
-        (790, 285, "MATERIALS", "q"),
-        (710, 185, "EVALUATION", "m"),
-        (cx, cy, "ACTIVE LEARNING", "core")
+    # One unnamed galaxy per field (mirrors src/data/galaxies.ts on the site): (x, y, r, rotation°, tilt, arms, form, tint)
+    galaxies = [
+        (720, 110, 62, -24, 0.62, 2, "spiral", cyan),
+        (880, 200, 82, 18, 0.78, 3, "spiral", gold),
+        (1060, 95, 52, 32, 0.55, 0, "elliptical", text_starlight),
+        (735, 295, 50, 12, 0.5, 0, "ring", green),
+        (1050, 290, 58, 140, 0.45, 2, "spiral", cyan),
     ]
-    
-    # Edges (i, j, dash)
-    edges = [
-        (6, 0, ""),
-        (6, 3, ""),
-        (6, 5, ""),
-        (4, 6, "7,6"),
-        (0, 3, "3,6"),
-        (0, 1, "3,6"),
-        (2, 1, "1,5"),
-        (2, 3, "1,5"),
-    ]
-    
     stars = [
         (660, 60, 1.2, 0.6), (720, 40, 0.8, 0.4), (820, 30, 1.5, 0.7), (910, 35, 0.9, 0.5),
         (1010, 45, 1.1, 0.6), (1070, 90, 0.7, 0.4), (1090, 190, 1.4, 0.7), (1060, 260, 0.8, 0.5),
@@ -48,6 +35,7 @@ def generate_svg(theme="dark"):
         (900, 250, 1.3, 0.6), (820, 230, 0.9, 0.5), (780, 170, 0.7, 0.3)
     ]
     
+    defs_extra = []
     lines_svg = []
     # Grid background
     for x in range(0, 1201, 50):
@@ -59,31 +47,38 @@ def generate_svg(theme="dark"):
     for (sx, sy, sr, so) in stars:
         star_svg.append(f'<circle cx="{sx}" cy="{sy}" r="{sr}" fill="{text_starlight}" opacity="{so}"/>')
         
-    edge_svg = []
-    for (i, j, dash) in edges:
-        x1, y1 = nodes[i][0], nodes[i][1]
-        x2, y2 = nodes[j][0], nodes[j][1]
-        d_attr = f' stroke-dasharray="{dash}"' if dash else ''
-        edge_svg.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{cyan}" stroke-width="1.2" stroke-opacity="0.55"{d_attr}/>')
-        
-    node_svg = []
-    for idx, (nx, ny, nlabel, ntype) in enumerate(nodes):
-        if ntype == "core":
-            node_svg.append(f'''
-                <circle cx="{nx}" cy="{ny}" r="40" fill="url(#core-glow)" />
-                <circle cx="{nx}" cy="{ny}" r="18" fill="none" stroke="{gold}" stroke-width="1.2" stroke-opacity="0.7" />
-                <circle cx="{nx}" cy="{ny}" r="27" fill="none" stroke="{gold}" stroke-width="0.9" stroke-dasharray="3,3" stroke-opacity="0.5" />
-                <circle cx="{nx}" cy="{ny}" r="6.5" fill="{gold}" />
-            ''')
-        else:
-            is_right = nx >= cx
-            anchor = "start" if is_right else "end"
-            tx = nx + 12 if is_right else nx - 12
-            node_svg.append(f'''
-                <circle cx="{nx}" cy="{ny}" r="11" fill="none" stroke="{cyan}" stroke-width="1" stroke-opacity="0.3" />
-                <circle cx="{nx}" cy="{ny}" r="4.5" fill="{text_starlight}" />
-                <text x="{tx}" y="{ny + 3.5}" fill="{text_muted}" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="9" font-weight="500" letter-spacing="1.2" text-anchor="{anchor}">{nlabel}</text>
-            ''')
+    rng = random.Random(7)
+    galaxy_svg = []
+    for gi, (gx, gy, gr, grot, tilt, arms, form, tint) in enumerate(galaxies):
+        rot = math.radians(grot)
+        pts = []
+        for _ in range(int(gr * 0.5)):
+            pts.append((rng.gauss(0, 0.13), rng.gauss(0, 0.13)))
+        for i in range(int(gr * 2.6)):
+            if form == "spiral":
+                t = rng.random() ** 0.75
+                a = 2 * math.pi * (i % arms) / arms + t * 3.4 + rng.gauss(0, 0.32 * (1 - t) + 0.12)
+                rr = 0.08 + t * 0.92
+            elif form == "ring":
+                a = rng.random() * 2 * math.pi
+                rr = 0.68 + rng.gauss(0, 0.07)
+            else:
+                u, v = rng.gauss(0, 0.4), rng.gauss(0, 0.4)
+                pts.append((u, v))
+                continue
+            pts.append((math.cos(a) * rr, math.sin(a) * rr))
+        galaxy_svg.append(f'<ellipse cx="{gx}" cy="{gy}" rx="{gr * 0.3}" ry="{gr * 0.22}" fill="url(#core-{gi})" transform="rotate({grot} {gx} {gy})"/>')
+        defs_extra.append(f'<radialGradient id="core-{gi}"><stop offset="0" stop-color="{text_starlight}" stop-opacity="0.9"/><stop offset="0.4" stop-color="{tint}" stop-opacity="0.4"/><stop offset="1" stop-color="{tint}" stop-opacity="0"/></radialGradient>')
+        for (u, v) in pts:
+            d = math.hypot(u, v)
+            if d > 1.15:
+                continue
+            sx, sy = u * gr, v * gr * tilt
+            x = gx + sx * math.cos(rot) - sy * math.sin(rot)
+            y = gy + sx * math.sin(rot) + sy * math.cos(rot)
+            near = max(0.0, 1 - d)
+            col = tint if rng.random() < 0.2 else text_starlight
+            galaxy_svg.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{0.35 + rng.random() * 0.5 + near * 0.4:.2f}" fill="{col}" opacity="{0.25 + rng.random() * 0.35 + near * 0.35:.2f}"/>')
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="100%">
   <defs>
@@ -91,6 +86,7 @@ def generate_svg(theme="dark"):
       <stop offset="0%" stop-color="{nebula_color}" stop-opacity="0.8"/>
       <stop offset="100%" stop-color="{bg}" stop-opacity="0"/>
     </radialGradient>
+    {''.join(defs_extra)}
     <radialGradient id="core-glow" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="{gold}" stop-opacity="0.45"/>
       <stop offset="100%" stop-color="{gold}" stop-opacity="0"/>
@@ -123,8 +119,7 @@ def generate_svg(theme="dark"):
   <!-- Stars & Constellation -->
   <g>
     {''.join(star_svg)}
-    {''.join(edge_svg)}
-    {''.join(node_svg)}
+    {''.join(galaxy_svg)}
   </g>
 
   <!-- Left: Editorial Observatory Headers -->
