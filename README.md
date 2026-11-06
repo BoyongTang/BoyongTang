@@ -4,15 +4,10 @@
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/hero-dark-mobile.svg" />
   <source media="(max-width: 600px)" srcset="./assets/hero-light-mobile.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg" />
-  <img src="./assets/hero-light.svg" width="100%" alt="Boyong Tang (Kelvin, けるゔぃん・とう). Undergraduate, Applied Mathematics & Artificial Intelligence, Sichuan University, Chengdu.  />
+  <img src="./assets/hero-light.svg" width="100%" alt="Boyong Tang (Kelvin, けるゔぃん・とう). Undergraduate, Applied Mathematics & Artificial Intelligence, Sichuan University, Chengdu." />
 </picture>
 
-<p align="center">
-  <a href="https://boyongtang.github.io">Homepage</a> ·
-  <a href="https://boyongtang.github.io/atlas/">Atlas</a> ·
-  <a href="https://boyongtang.github.io/about/">About</a> ·
-  <a href="mailto:boyong.tang.math.ai@gmail.com">Email</a>
-</p>
+<p align="center"><a href="https://boyongtang.github.io">Homepage</a></p>
 
 ### About
 

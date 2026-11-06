@@ -119,7 +119,7 @@ def hero(theme, mobile):
     W = 520 if mobile else 960
     s = Svg('hero', W, 10, theme, 'Boyong Tang — research profile',
             'Boyong Tang (Kelvin, けるゔぃん・とう). Undergraduate, Applied Mathematics & Artificial Intelligence, '
-            'Sichuan University, Chengdu. “Observe the unanswered. Mapping questions, methods, and the evidence between them.”')
+            'Sichuan University, Chengdu.')
     c = s.c
     cx = W / 2
     name = 52 if mobile else 66
@@ -142,15 +142,7 @@ def hero(theme, mobile):
     s.add(s.centred(cx, y, [('Sichuan University, Chengdu', 'garamond-i', 18.5, c['soft'], 0),
                             ('   ·   ', 'garamond', 18.5, c['soft'], 0),
                             ('四川大学', 'song', 14.5, c['soft'], 0.06)]))
-    y += 52
-    s.add(s.text(cx, y, 'Observe the unanswered.', 'garamond-i', 25, c['ink'], 'middle'))
-    y += 26
-    sub = (['Mapping questions, methods,', 'and the evidence between them.'] if mobile
-           else ['Mapping questions, methods, and the evidence between them.'])
-    for ln in sub:
-        s.add(s.text(cx, y, ln, 'garamond', 16, c['soft'], 'middle'))
-        y += 21
-    s.h = int(y + 18)
+    s.h = int(y + 22)
     return s
 
 
