@@ -4,7 +4,7 @@
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/hero-dark-mobile.svg" />
   <source media="(max-width: 600px)" srcset="./assets/hero-light-mobile.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg" />
-  <img src="./assets/hero-light.svg" width="100%" alt="Boyong Tang (Kelvin, けるゔぃん・とう). Undergraduate, Applied Mathematics & Artificial Intelligence, Sichuan University, Chengdu. “Observe the unanswered.” Beside the title, a small black-and-white manga panel of rain on a window." />
+  <img src="./assets/hero-light.svg" width="100%" alt="Boyong Tang (Kelvin, けるゔぃん・とう). Undergraduate, Applied Mathematics & Artificial Intelligence, Sichuan University, Chengdu. “Observe the unanswered. Mapping questions, methods, and the evidence between them.”" />
 </picture>
 
 <p align="center">
@@ -37,5 +37,5 @@ None yet. Papers will be listed here once a real record exists.
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/footer-dark-mobile.svg" />
   <source media="(max-width: 600px)" srcset="./assets/footer-light-mobile.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="./assets/footer-dark.svg" />
-  <img src="./assets/footer-light.svg" width="100%" alt="今日も、雨。 — the questions remain open." />
+  <img src="./assets/footer-light.svg" width="100%" alt="" />
 </picture>
