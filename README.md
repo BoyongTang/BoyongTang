@@ -16,7 +16,7 @@
 
 ### About
 
-I study applied mathematics and AI at Sichuan University. My current work is focused on AI4S. You can see the details below
+I study applied mathematics and AI at Sichuan University. My current work is focused on AI4S. You can see the details below.
 
 四川大学本科生，目前正在做AI4S的相关工作。
 
@@ -27,7 +27,8 @@ I study applied mathematics and AI at Sichuan University. My current work is foc
 
 ### Publications
 
-None yet. Papers will be listed here once a real record exists.
+- **KolTa: A Physics-Informed Active Learning Framework for Formulation Discovery with Limited Data**-
+[arxiv](https://arxiv.org/abs/2611.06394)
 
 ### Projects
 
