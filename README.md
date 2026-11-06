@@ -11,7 +11,7 @@
 
 ### About
 
-I study applied mathematics and AI at Sichuan University. My current work is focused on AI4S.
+Undergraduate in Sichuan University majored in applied mathematics and AI double degree. My current work is focused on AI4S.
 
 四川大学本科生，应用数学和人工智能双学士学位，目前正在做AI4S的相关工作。
 
