@@ -4,7 +4,7 @@
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/hero-dark-mobile.svg" />
   <source media="(max-width: 600px)" srcset="./assets/hero-light-mobile.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg" />
-  <img src="./assets/hero-light.svg" width="100%" alt="Boyong Tang (Kelvin, けるゔぃん・とう). Undergraduate, Applied Mathematics & Artificial Intelligence, Sichuan University, Chengdu. “Observe the unanswered. Mapping questions, methods, and the evidence between them.”" />
+  <img src="./assets/hero-light.svg" width="100%" alt="Boyong Tang (Kelvin, けるゔぃん・とう). Undergraduate, Applied Mathematics & Artificial Intelligence, Sichuan University, Chengdu.  />
 </picture>
 
 <p align="center">
@@ -16,9 +16,9 @@
 
 ### About
 
-I study applied mathematics and AI at Sichuan University. My current work is active learning for materials science: reproducing published methods on public papers, data and author code, then turning them into a closed loop that can move to new material systems.
+I study applied mathematics and AI at Sichuan University. My current work is focused on AI4S. You can see the details below
 
-四川大学本科生，用应用数学与机器学习研究材料科学中的主动学习。
+四川大学本科生，目前正在做AI4S的相关工作。
 
 <!--
 ### Research interests
