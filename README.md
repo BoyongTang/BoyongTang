@@ -11,9 +11,14 @@
 
 ### About
 
-I study applied mathematics and AI at Sichuan University. My current work is focused on AI4S. You can see the details below.
+I study applied mathematics and AI at Sichuan University. My current work is focused on AI4S.
 
 四川大学本科生，目前正在做AI4S的相关工作。
+
+If u want to know me better, please click [link](https://boyongtang.github.io).
+
+如果你想更好的了解我，请点击这个[链接](https://boyongtang.github.io)。
+
 
 <!--
 ### Research interests
