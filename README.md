@@ -13,7 +13,7 @@
 
 Undergraduate in Sichuan University majored in applied mathematics and AI double degree. My current work is focused on AI4S.
 
-四川大学本科生，应用数学和人工智能双学士学位在读，目前正在做AI4S的相关工作。
+四川大学本科生，应用数学和人工智能双学士学位在读，目前从事AI4S,XAI等的研究。
 
 If u want to know me better, please click this [link](https://boyongtang.github.io).
 
