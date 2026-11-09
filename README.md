@@ -13,7 +13,7 @@
 
 Undergraduate in Sichuan University majored in applied mathematics and AI double degree. My current work is focused on AI4S.
 
-四川大学本科生，应用数学和人工智能双学士学位，目前正在做AI4S的相关工作。
+四川大学本科生，应用数学和人工智能双学士学位在读，目前正在做AI4S的相关工作。
 
 If u want to know me better, please click this [link](https://boyongtang.github.io).
 
@@ -25,10 +25,13 @@ If u want to know me better, please click this [link](https://boyongtang.github.
 (to be filled in)
 -->
 
-### Publications
+### Research
+#### Artificial Intelligence
 
 - **KolTa: A Physics-Informed Active Learning Framework for Formulation Discovery with Limited Data**-
 [arxiv](https://arxiv.org/abs/2611.06394)
+
+#### Applied Math
 
 ### Projects
 
