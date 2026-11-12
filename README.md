@@ -11,7 +11,9 @@
 
 ### About
 
-Hello! I'm **Boyong Tang**, an undergraduate at **Sichuan University**, pursuing a dual bachelor's degree in **Applied Mathmatics** and **Artificial Intelligence**.
+Hello! I'm **Boyong Tang**, an undergraduate at **Sichuan University**, pursuing a dual bachelor's degree in **Applied Mathematics** and **Artificial Intelligence**.
+
+你好我是伯庸
 
 If u want to know me better, please click this [link](https://boyongtang.github.io).
 
