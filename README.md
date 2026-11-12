@@ -13,6 +13,8 @@
 
 Hello! I'm **Boyong Tang**, an undergraduate at **Sichuan University**, pursuing a dual bachelor's degree in **Applied Mathmatics** and **Artificial Intelligence**.
 
+你好，我是汤伯庸，目前在四川大学攻读应用数学与人工智能双学士学位。
+
 If u want to know me better, please click this [link](https://boyongtang.github.io).
 
 如果你想更好的了解我，请点击这个[链接](https://boyongtang.github.io)。
