@@ -13,7 +13,7 @@
 
 ### About
 
-Hello! I'm **Boyong Tang**, an undergraduate at **Sichuan University**, pursuing a dual bachelor's degree in **Applied Mathematics** and **Artificial Intelligence**. My current research focuses on **AI for Science (AI4S)** and **Explainable AI (XAI)**.
+Hello! I'm **Boyong Tang**, an undergraduate at **Sichuan University**, pursuing a dual bachelor's degree in **Applied Mathematics** and **Artificial Intelligence**. My current research focuses on **AI for Science (AI4S)**, **Explainable AI (XAI)** and **AI for Math**.
 
 你好，我是汤伯庸，目前在四川大学攻读应用数学与人工智能双学士学位，主要从事 **AI4S（AI赋能科学）** 与 **Actionable XAI（行动导向可解释人工智能）** 方向的研究。
 
