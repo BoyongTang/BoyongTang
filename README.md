@@ -7,6 +7,8 @@
   <img src="./assets/hero-light.svg" width="100%" alt="Boyong Tang (Kelvin, けるゔぃん・とう). Undergraduate, Applied Mathematics & Artificial Intelligence, Sichuan University, Chengdu." />
 </picture>
 
+<p align="center"><em>“We are still here. We are very much alive. We are not going anywhere.”</em><br /><sub>— Alessandro Masullo</sub></p>
+
 <p align="center"><a href="https://boyongtang.github.io">Homepage</a></p>
 
 ### About
